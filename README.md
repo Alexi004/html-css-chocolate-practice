@@ -1,1 +1,1 @@
-# html-css-chocolate-practice
+# Практика 1 модуля
