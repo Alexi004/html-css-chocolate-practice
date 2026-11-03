@@ -73,8 +73,8 @@ address {
   max-width: 1168px;
   padding: 0 16px;
   margin: 0 auto;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .accent {
@@ -112,6 +112,14 @@ address {
   justify-content: center;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
+  transition: 300ms ease-out;
+  transition-property: border;
+}
+.socials-light .socials-link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.socials-light .socials-icon {
+  color: #fff;
 }
 
 .socials-link:hover,
@@ -119,6 +127,13 @@ address {
   border: 1px solid rgba(253, 146, 34, 0.1);
 }
 .socials-icon {
+  color: #111111;
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  color: #fd9222;
 }
 
 /* Button */
@@ -128,6 +143,8 @@ address {
   background-color: transparent;
   border: 1px solid transparent;
   font-weight: 600;
+  transition: 300ms ease-out;
+  transition-property: color, background-color, border-color;
 }
 .btn-filled {
   color: #fff;
