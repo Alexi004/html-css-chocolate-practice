@@ -9,26 +9,41 @@
   gap: 32px;
 }
 .ingredients-item {
+  position: relative;
   width: calc((100% - 32px * 3) / 4);
   border-radius: 15px;
   padding: 28px 24px;
 }
+.ingredients-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
+.ingredients-item:nth-child(2n) .ingredients-icon {
+  color: #fd9222;
+}
+.ingredients-item:nth-child(2n + 1) .ingredients-icon {
+  color: #fafafa;
+}
 .ingredients-item:nth-child(2n) {
   border: 1px solid #fd9222;
   background-color: #fff;
 }
-
 .ingredients-item:nth-child(4n + 1) {
   background: #fd9222;
   color: #fff;
 }
-
 .ingredients-item:nth-child(4n + 3) {
   background: #1e1823;
   color: #fff;
 }
-
 .ingredients-ill {
   margin-bottom: 36px;
 }
